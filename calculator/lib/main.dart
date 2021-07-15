@@ -127,7 +127,7 @@ class _MyAppState extends State<MyApp> {
       return "";
     }
     else{
-      List Numbers= value.split(new RegExp(r"['+','-','*','/']"));
+      List Numbers= value.split(new RegExp(r"['+','\-','*','/']"));
       for (int i=0;i<value.length;i++){
         if (IsOperation(value[i])){
           operations.add(value[i]);
